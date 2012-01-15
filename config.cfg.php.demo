@@ -1,0 +1,10 @@
+<?php
+// Database config
+$db_port = 3306;
+$db_host = 'localhost';
+$db_user = 'occupythenet';
+$db_pass = 'occupythenet';
+
+$db_schema = 'occupythenet';
+
+?>
