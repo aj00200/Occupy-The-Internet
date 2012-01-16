@@ -1,19 +1,7 @@
 <?php
 
-# If you have already installed then delete this
+
 if ( ! file_exists('Core/Curse/config/database.php'))
-{
-	// Make sure we've not already tried this
-	if (strpos($_SERVER['REQUEST_URI'], 'installer/'))
-	{
-		header('Status: 404');
-		exit('CurseCMS is missing Core/Curse/config/database.php and cannot find installer.');
-	}
-	
-	// Otherwise go to installer
-	header('Location: '.rtrim($_SERVER['REQUEST_URI'], '/').'/installer/');
-	exit;
-}
 
 /*
  *---------------------------------------------------------------
